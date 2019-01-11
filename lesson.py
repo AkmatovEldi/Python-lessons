@@ -1,3 +1,7 @@
 name = input("Введите имя:")
 age = input("Введите возраст:")
-print ("Мое имя, {0} мне {1} {0}".format(name, age))
+age = int(age)
+if age > 20:
+	print("Вам больше 20 лет")
+else:
+	print("Вам {} лет".format(age))
