@@ -1,4 +1,8 @@
-age = int(input("Введите Ваш возраст:"))
+bookshelf = {
+	"key1": "Eldi", 
+	"key2": "Erik",
+	"kye3": "Ulan"
+}
 
-for num in range(age):
-	print(num)
+for zamok, value in bookshelf.items():
+	print("Ключ {} --> значение {}".format(zamok, value))
