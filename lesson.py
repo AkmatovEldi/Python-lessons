@@ -1,7 +1,4 @@
-name = input("Введите ваше имя:")
-age = int(input("Введите ваш возраст:"))
+age = int(input("Введите Ваш возраст:"))
 
-while age <= 20:
-	print("Ваш возраст меньше 20:", age)
-	age = int(input("Введите корректный возраст для доступа: "))
-print(f"Ваш возраст {age}, доступ открыт!")
+for num in range(age):
+	print(num)
