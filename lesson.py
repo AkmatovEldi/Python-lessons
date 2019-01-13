@@ -1,21 +1,19 @@
-class Vehicle:
-	def __init__(self, number_of_wheels, type_of_tank, seating_capacity, max_velocity):
+class Car:
+	def __init__(self, number_of_wheels, seating_capacity, max_velocity):
 		self.number_of_wheels = number_of_wheels
-		self.type_of_tank = type_of_tank
 		self.seating_capacity = seating_capacity
 		self.max_velocity = max_velocity
 
-	def number_of_wheels(self):
-		return self.number_of_wheels
+my_car = Car(4, 5, 250)
+print(my_car.number_of_wheels)
+print(my_car.seating_capacity)
+print(my_car.max_velocity)
 
-	def set_number_of_wheels(self, number):
-		self.number_of_wheels = number
+class Electric_Car(Car):
+	def __init__(self, number_of_wheels, seating_capacity, max_velocity):
+		Car.__init__(self, number_of_wheels, seating_capacity, max_velocity)
 
-	def make_noise(self):
-		print("vruum")
-
-tesla_model_s = Vehicle(4, "electric", 5, 250)
-print(tesla_model_s.number_of_wheels)
-tesla_model_s.number_of_wheels = 2
-print(tesla_model_s.number_of_wheels)
-tesla_model_s.make_noise()
+my_electric_car = Electric_Car(4, 5, 250)
+print(my_electric_car.number_of_wheels)
+print(my_electric_car.seating_capacity)
+print(my_electric_car.max_velocity)
