@@ -1,7 +1,8 @@
-name = input("Введите ваше имя:")
-age = int(input("Введите ваш возраст:"))
+bookshelf = {
+	"key1": "Eldi", 
+	"key2": "Erik",
+	"kye3": "Ulan"
+}
 
-while age <= 20:
-	print("Ваш возраст меньше 20:", age)
-	age = int(input("Введите корректный возраст для доступа: "))
-print(f"Ваш возраст {age}, доступ открыт!")
+for zamok, value in bookshelf.items():
+	print("Ключ {} --> значение {}".format(zamok, value))
